@@ -1,0 +1,157 @@
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    background:#007ACC ;
+}
+
+.logo img{
+    width: 120px;
+    color: white;
+}
+.primary-menu{}
+.primary-menu ul{
+    margin-bottom: 0;
+
+}
+.primary-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.primary-menu ul li a{
+    display: block;
+    color: white;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height:70px;
+    text-decoration: none;
+    transition: .5s;
+  
+}
+.primary-menu ul li a:hover{
+    background-color:#0c5383 ;
+}
+/* banner part */
+.banner{
+    background: url(./image/px-beach-daylight-fun-1430675-image.jpg) no-repeat center;
+    background-size: cover;
+    padding: 160px 0;
+}
+.banner-text h1{
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 25px;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    /* transition:.5s; */
+}
+.banner-text h1::before{
+    content: "";
+    height:100%;
+    width:0;
+    position: absolute;
+    top:0;
+    left:0;
+    background: gold;
+    border-radius: 10px;
+    z-index: -1;
+    transition:1s;
+    
+
+}
+.banner-text h1:hover::before{
+    width: 100%;
+}
+.banner-text h2{
+    background-color:rgba(255, 0, 0, 0.876) ;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+}
+.banner-text h2::after{
+    content: "";
+    height:100%;
+    width:0;
+    position: absolute;
+    top:0;
+    right:0;
+    background:green;
+    border-radius: 10px;
+    z-index: -1;
+    transition: .5s;
+}
+.banner-text h2:hover::after{
+    width: 100%;
+   
+}
+/* about part */
+.about{
+    background: #ddd;
+}
+/* servic part */
+.services{
+    background-color: #f9f9f9;
+}
+.services span{
+    font-size: 30px;
+    color: white;
+    background-color:#007ACC ;
+    width:70px;
+    margin: auto;
+    border-radius: 20px 0 20px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.services .card:hover span{
+    border-radius: 0 20px 0 20px;
+}
+/* product part */
+img{
+    max-width: 100%;
+    
+}
+.product-right h2{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.product-right ul{
+    list-style: none;
+    padding-left: 0;
+}
+.product-right ul li{
+    background: #fafafa;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+/* footer part */
+.footer{
+    background-color: #203340;
+}
+.footer p{
+    margin-bottom: 0;
+
+}
+.footer a{
+    color: white;
+    margin-left: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-form .al:hover{
+    background-color: red;
+    transition: .5s
+    ;
+}
